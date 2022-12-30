@@ -21,7 +21,7 @@
   
   <title>
     
-      archive_a: 2022/4 
+      手记二零二二年十二月 
       
       
     
@@ -43,6 +43,10 @@
 
 
   
+
+  
+    
+<link rel="stylesheet" href="/css/post.css">
 
   
 
@@ -105,156 +109,52 @@
 
 
       <div class="main">
-        <!-- 归档页，展示本站所有文章，按照年份降序归类，url形式：https://yoursite/archives/ -->
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
 
-<!-- last: 按年份把文章分组，当前遍历到的年份 -->
-<!-- now: 当前遍历到的文章的发布年份 -->
+<!-- LaTex Display -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+</script>
 
-<div class="container archives">
-  <div class="post-list">
-    
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2022</span>
-          </h2>
-        </div>
-      
-      <div class="post-item" title="手记二零二二年十二月">
-        <div class="time-m-d">12-01</div>
-        <div class="title">
-          <a href="/2022/12/01/%E6%89%8B%E8%AE%B0%E4%BA%8C%E9%9B%B6%E4%BA%8C%E4%BA%8C%E5%B9%B4%E5%8D%81%E4%BA%8C%E6%9C%88/">
-            
-              <span>手记二零二二年十二月</span>
-            
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="手记二零二二年十一月">
-        <div class="time-m-d">11-01</div>
-        <div class="title">
-          <a href="/2022/11/01/%E6%89%8B%E8%AE%B0%E4%BA%8C%E9%9B%B6%E4%BA%8C%E4%BA%8C%E5%B9%B4%E5%8D%81%E4%B8%80%E6%9C%88/">
-            
-              <span>手记二零二二年十一月</span>
-            
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="手记二零二二年十月">
-        <div class="time-m-d">10-01</div>
-        <div class="title">
-          <a href="/2022/10/01/%E6%89%8B%E8%AE%B0%E4%BA%8C%E9%9B%B6%E4%BA%8C%E4%BA%8C%E5%B9%B4%E5%8D%81%E6%9C%88/">
-            
-              <span>手记二零二二年十月</span>
-            
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="手记二零二二年九月">
-        <div class="time-m-d">09-01</div>
-        <div class="title">
-          <a href="/2022/09/01/%E6%89%8B%E8%AE%B0%E4%BA%8C%E9%9B%B6%E4%BA%8C%E4%BA%8C%E5%B9%B4%E4%B9%9D%E6%9C%88/">
-            
-              <span>手记二零二二年九月</span>
-            
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="手记二零二二年八月">
-        <div class="time-m-d">08-01</div>
-        <div class="title">
-          <a href="/2022/08/01/%E6%89%8B%E8%AE%B0%E4%BA%8C%E9%9B%B6%E4%BA%8C%E4%BA%8C%E5%B9%B4%E5%85%AB%E6%9C%88/">
-            
-              <span>手记二零二二年八月</span>
-            
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="手记二零二二年七月">
-        <div class="time-m-d">07-01</div>
-        <div class="title">
-          <a href="/2022/07/01/%E6%89%8B%E8%AE%B0%E4%BA%8C%E9%9B%B6%E4%BA%8C%E4%BA%8C%E5%B9%B4%E4%B8%83%E6%9C%88/">
-            
-              <span>手记二零二二年七月</span>
-            
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="手记二零二二年六月">
-        <div class="time-m-d">06-29</div>
-        <div class="title">
-          <a href="/2022/06/29/%E6%89%8B%E8%AE%B0%E4%BA%8C%E9%9B%B6%E4%BA%8C%E4%BA%8C%E5%B9%B4%E5%85%AD%E6%9C%88/">
-            
-              <span>手记二零二二年六月</span>
-            
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="六月 风吹 日照">
-        <div class="time-m-d">06-02</div>
-        <div class="title">
-          <a href="/2022/06/02/%E5%85%AD%E6%9C%88-%E9%A3%8E%E5%90%B9-%E6%97%A5%E7%85%A7/">
-            
-              <span>六月 风吹 日照</span>
-            
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="记录喜欢的电影、书籍、纪录片">
-        <div class="time-m-d">05-11</div>
-        <div class="title">
-          <a href="/2022/05/11/%E7%94%B5%E5%BD%B1%E4%B8%8E%E4%B9%A6%E7%B1%8D%E8%AE%B0%E5%BD%95/">
-            
-              <span>记录喜欢的电影、书籍、纪录片</span>
-            
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="四月是谎言，五月也是">
-        <div class="time-m-d">05-01</div>
-        <div class="title">
-          <a href="/2022/05/01/%E5%9B%9B%E6%9C%88%E6%98%AF%E8%B0%8E%E8%A8%80,%E4%BA%94%E6%9C%88%E4%B9%9F%E6%98%AF/">
-            
-              <span>四月是谎言，五月也是</span>
-            
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="dear dqy">
-        <div class="time-m-d">04-30</div>
-        <div class="title">
-          <a href="/2022/04/30/dear-dqy/">
-            
-              <span>dear dqy</span>
-            
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="my first blog">
-        <div class="time-m-d">04-29</div>
-        <div class="title">
-          <a href="/2022/04/29/my%20first%20blog/">
-            
-              <span>my first blog</span>
-            
-          </a>
-        </div>
-      </div>
-    
+<div class="post">
+  <h3 class="date">
+    Dec 01, 2022
+  </h3>
+  <h1>
+    手记二零二二年十二月
+  </h1>
+  <div class="content markdown-body">
+    <p>2022年12月4日<br><br>最近没怎么哭过了</p>
+<p>2022年12月8日<br><br>我从未像如此一般清醒 </p>
+<p>2022年12月9日<br><br>最近是现充 </p>
+<p>那一粒雪子 落入 随后融化 </p>
+<p>2022年12月19日<br><br>好久没写了 因为最近确实没有很经常想起你 </p>
+<p>发烧了几天 好难受 你可别像我如此一样 为此而感到发寒 希望你们都能身体健康 </p>
+<p>2022年12月21日<br><br>家庭 是我这前半生都无法绕过的 我多希望这个世界是如此的荒芜 灰白 </p>
+<p>2022年12月22日<br><br>最大程度的控制自己不去伤害别人 不去影响别人的人生轨迹 </p>
+<p>在不同阶段总有不同的理解 不同的人生观 最近总感觉我的幸福早已被扼杀了 我希望能看见你们幸福的时刻 也并不是像电影那样什么流涕那样 只是那种为熟人幸福而幸福</p>
+<p>2022年12月30日<br><br>今日随读小脑袋似乎开窍了 新年马上到来 正好今日观影后的情绪尚存 回家后便打开电脑记录下来</p>
+<p> “青春有逝去的时候。那也是我们失去人的时候。懂得如何接受这样的时候很重要。但这样的时候真的很难受。” Memo的创作起初是为了满足情绪的 对于一些记忆与思绪的摘录 思念、恨意、感动缠绕在一起 也让我写了万字有余 大部分是关于欢喜之人 它也很好的完成了赋予的任务 “我仍然会记得那些” 也是对回忆中你那句气话的回应 这些情绪是记叙的支撑 直至十一月 渐渐平息 我开始找不到记录的理由 如此宁静 自然也无从可写 我需要重新找到记录的理由 并不再仅仅只是因为爱 而是需要更多可以记叙的理由 或许是自然 教育 幸福</p>
+<p>青春让我理解到 欢喜 并不仅仅是肉体相遇 应该是精神的共鸣 理解与陪伴 自由与信赖 相互的促进 是随时随刻都能感受到的温暖 是为了更好的陪伴 从2022.4.29日开始 这便是我所记录青春的一部分 我的所感 所想 某天当我读到某些时刻我仍然会发自内心的幸福</p>
+<p>很高兴能够欢喜你</p>
+<p>2022年12月31日<br><br>提前记录了<br>新年快乐！ 希望你们和我身边的人都能幸福健康！我的青春希望能够再精彩一些！</p>
+
   </div>
+  
+    
+      <a id="older" class="blog-nav" href="/2022/11/01/%E6%89%8B%E8%AE%B0%E4%BA%8C%E9%9B%B6%E4%BA%8C%E4%BA%8C%E5%B9%B4%E5%8D%81%E4%B8%80%E6%9C%88/">OLDER&nbsp;&gt;</a>
+      
+        
+            
 </div>
-
         <div class="footer">
   
     <div class="footer-more">
